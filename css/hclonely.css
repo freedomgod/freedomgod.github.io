@@ -49,7 +49,6 @@ input::-webkit-input-placeholder{
 	position: absolute;
     right: 0;
     top: 0;
-    width: 50px;
     line-height: 48px;
     background: transparent;
     border: none;
@@ -59,7 +58,6 @@ input::-webkit-input-placeholder{
     outline: none;
     padding: 0 10px;
 }
-.search-btn:hover{ color: #6b7184 }
 .search-btn i { margin: 0 }
 .search-hot-text{
   position: absolute;

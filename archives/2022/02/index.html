@@ -26,7 +26,7 @@
 <script src="/js/jquery-1.11.1.min.js"></script>
 
   <script>
-    var userDefinedSearchData = {"custom":false,"thisSearch":"https://www.baidu.com/s?wd=","thisSearchIcon":"url(https://www.baidu.com/favicon.ico)","hotStatus":true,"data":[{"name":"百度","img":"url(https://www.baidu.com/favicon.ico)","url":"https://www.baidu.com/s?wd="}]};
+    var userDefinedSearchData = {"custom":true,"thisSearch":"https://cn.bing.com/search?q=","thisSearchIcon":"url(https://cn.bing.com/sa/simg/favicon-2x.ico)","hotStatus":true,"data":[{"name":"必应","img":"url(https://cn.bing.com/sa/simg/favicon-2x.ico)","url":"https://cn.bing.com/search?q="},{"name":"百度","img":"url(https://www.baidu.com/favicon.ico)","url":"https://www.baidu.com/s?wd="},{"name":"联合搜索","img":"url(https://www.gobaidugle.com/favicon.ico)","url":"https://www.gobaidugle.com/search?keyword="}]};
     var expandAll = true;
   </script>
   
@@ -59,6 +59,7 @@
   
   
   <!-- 直接添加html内容即可 -->
+<link rel="stylesheet" href="/css/diy_button_style.css">
 <!-- 可设置多行 -->
   
 <meta name="generator" content="Hexo 6.0.0"></head>
@@ -229,15 +230,8 @@
           
         </ul>
       </li>
-      <li class="switch-mode hover-line" onclick="switchNightMode()">
-        <a href="#">
-          <svg t="1593061068148" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1681" width="16" height="16">
-            <path d="M582.4 326.4c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0 448c-70.4 0-131.2-36.8-164.8-92.8 12.8 3.2 27.2 4.8 40 4.8 121.6 0 219.2-99.2 219.2-219.2 0-17.6-1.6-35.2-6.4-52.8 60.8 32 102.4 96 102.4 169.6 1.6 104-84.8 190.4-190.4 190.4zM582.4 262.4c17.6 0 32-14.4 32-32v-128c0-17.6-14.4-32-32-32s-32 14.4-32 32v128c0 17.6 14.4 32 32 32zM262.4 582.4c0-17.6-14.4-32-32-32h-128c-17.6 0-32 14.4-32 32s14.4 32 32 32h128c17.6 0 32-14.4 32-32zM310.4 356.8c6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6 12.8-12.8 12.8-32 0-44.8l-91.2-91.2c-12.8-12.8-32-12.8-44.8 0-12.8 12.8-12.8 32 0 44.8l91.2 91.2zM944 220.8c-12.8-12.8-32-12.8-44.8 0l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-33.6 0-44.8zM310.4 808l-91.2 91.2c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 14.4 9.6 22.4 9.6 8 0 16-3.2 22.4-9.6l91.2-91.2c12.8-12.8 12.8-32 0-44.8-11.2-11.2-32-11.2-44.8 0z" p-id="1682" fill="#707070"></path>
-          </svg>
-        </a>
-      </li>
-      <li class="he-feng-weather-plugin" style="min-height: 75px;">
-        <iframe width="200" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="https://i.tianqi.com?c=code&id=86&color=%23000000&icon=1&py=请选择&site=7"></iframe>
+      <li class="tianqiapi-weather-plugin" style="min-height: 75px;">
+        <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=ty&skin=orange&paddingtop=10px" frameborder="0" width="300" height="75" allowtransparency="true"></iframe>
       </li>
     </ul>
     
@@ -250,7 +244,17 @@
         <div class="search-box">
           <span class="search-icon" style="background: url(/images/search_icon.png) 0px 0px; opacity: 1;"></span>
           <input type="text" id="txt" class="search-input" autocomplete="off" placeholder="请输入关键字，按回车 / Enter 搜索">
-          <button class="search-btn" id="search-btn"><i class="fa fa-search"></i></button>
+          <button class="search-btn" id="search-btn">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                </svg>
+              </div>
+            </div>
+            <span></span>
+          </button>
         </div>
         <!-- 搜索热词 -->
         <div class="box search-hot-text" id="box" style="display: none;">
