@@ -1,7 +1,7 @@
 /* From cssbuttons.io by @adamgiebl */
 .search-btn {
  font-family: inherit;
- font-size: 18px;
+ font-size: 15px;
  background: royalblue;
  color: white;
  padding: 0.7em 1em;
@@ -9,9 +9,10 @@
  display: flex;
  align-items: center;
  border: none;
- border-radius: 12px;
+ border-radius: 11px;
  overflow: hidden;
  transition: all 0.2s;
+ top: 5%;
 }
 
 .search-btn span {
